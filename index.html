@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="row ">
+    <form class="col s12 m12 l12" id="form">
+        <div class="row">
+            <div class="input-field col s3 m3 l3">
+                <fieldset class="">
+                    <legend class="#ea80fc purple-text accent-5">To create new casino fill the form</legend>
+                    <div class="row">
+                        <div class="input-field col  s12 m12 l12">
+                            <input id="number" type="text" class="validate">
+                            <label for="number"> Quantity of Slot Machines</label>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <input id="money" type="text" class="validate">
+                        <label for="money">Money in casino</label>
+                    </div>
+                    <br>
+                    <br>
+                    <input class="waves-effect waves-light btn #880e4f pink darken-4" type="submit"
+                           value="Create Casino" name="create-casino">
+                    <br>
+                    <br>
+                    <input class="waves-effect waves-light btn #880e4f pink darken-4" type="submit"
+                           value="Create SlotMachin" name="create-slot">
+                    <br>
+                    <br>
+                    <input class="waves-effect waves-light btn #880e4f pink darken-4" type="submit"
+                           value="Delete SlotMachin" name="delete-slot">
+                    <br>
+                    <br>
+                    <input class="waves-effect waves-light btn #880e4f pink darken-4" type="submit"
+                           value="Play with us!" id="btn-play">
+                    <br>
+                    <br>
+                    <input class="waves-effect waves-light btn #880e4f pink darken-4" type="submit"
+                           value="Take off money from slot" id="btn-take-money">
+                    <br>
+                    <br>
+                    <input class="waves-effect waves-light btn #880e4f pink darken-4" type="submit"
+                           value="Take off money from casino" id="btn-take-money-all">
+                </fieldset>
+            </div>
+            <div class="col s9 m9 l9 slot-wrap">
+                <div class="row" id="row">
+                    <!--<div class="col s1 m1 l1 slot">-->
+                        <!--<span class="custom-number">777</span>-->
+                        <!--<span class="money-slot">$$$$$$</span>-->
+                        <!--<span class="number-slot">№10</span>-->
+                        <!--&lt;!&ndash;<a class="waves-effect waves-light btn #ab47bc purple lighten-1">play!</a>&ndash;&gt;-->
+                    <!--</div>-->
+                </div>
+            </div>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="script/app.js"></script>
+<script src="script/run.js"></script>
+</body>
+</html>
