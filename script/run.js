@@ -27,6 +27,7 @@ $('[name="delete-slot"]').click(function (event) {
     var index = prompt('Choose a slot what you want delete');
     var isValid = isCorrectValue(index);
     if (isValid) {
+        index -= 1;
         CASINO.removeSlotMachin(index);
         var arr = $('#row').children();
         $(arr[index]).remove();
